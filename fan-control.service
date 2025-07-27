@@ -1,0 +1,11 @@
+[Unit]
+Description=Startup Fan Control Script
+After=network.target
+
+[Service]
+ExecStart=/root/fan-control.sh
+Type=oneshot
+RemainAfterexit=yes
+
+[Install]
+WantedBy=multi-user.target
